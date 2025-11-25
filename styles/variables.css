@@ -1,1 +1,60 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Шрифты */
+  --main-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --accent-font: "PressStart2P", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+
+  /* Толщины */
+  --card-text-weight: 410;
+  --title-text-weight: 715;
+
+  /* Цвета для градиента */
+  --color-grid-line: #d3d3d3;
+  --color-bg-top: #e7e7e7;
+  --color-bg-bottom: #1a1a1a;
+
+  /* Градиент фона */
+  --page-bg-image: repeating-linear-gradient(
+      to right,
+      var(--color-grid-line) 0,
+      var(--color-grid-line) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-grid-line) 0,
+      var(--color-grid-line) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--color-bg-top) 0.01%,
+      var(--color-bg-bottom) 100%
+    );
+
+  /* Ширина контентной области */
+  --content-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+
+  /* Отступы шапки */
+  --header-padding-block: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
+  --header-padding-inline: clamp(1rem, -1.3438rem + 10vw, 7.65625rem);
+
+  /* Размеры заголовков шапки */
+  --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+  /* Оформление карточек */
+  --card-border: 2px solid #000000;
+  --card-bg-color: #fff;
+
+  /* Label */
+  --label-stroke-color: #fff;
+
+  /* Heart SVG */
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+}
